@@ -1,0 +1,4 @@
+通过以上分析可知，指令控制、操作控制、时间控制由控制单元(CU)完成;数据加工
+由ALU完成;中断处理由中断系统完成，最后再加上一些寄存器，CPU就被制作出来了，
+
+![picture](https://gitee.com/cool_season/learning-photo/new/master/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86)
