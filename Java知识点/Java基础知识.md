@@ -1,35 +1,33 @@
-# Java学习
+# Java语言概述
 
-## Java语言概述
-
-### 编写-编译-运行
+## 编写-编译-运行
 
 - 编写：我们将编写的java代码保存在以".java"结尾的源文件中
 -  编译：使用javac.exe命令编译我们的java源文件（.class文件)如果程序中有多个class，则生成星相对个数的 .class文件（字节码文件）。格式：javac 源文件名.java
 - 运行：使用java.exe命令解释运行我们的字节码文件。格式：java 类名
 - 在一个java源文件中可以声明多个class。但是，只能最多有--个类声明为public的。而且要求声明为public的类的类名必须与源文件名相同
 
-### JDK,JRE,JVM
+## JDK,JRE,JVM
 
 - JDK = JRE + Java的开发工具（javac.exe,java.exe,javadoc.exe）；
 - JRE = JVM + Java核心类库
 
-### 常用DOS命令
+## 常用DOS命令
 
 - ![](assets/fdf97b18f43b62ca49e8f06679255c3c56236a29517316693fb6bd5cd711423c.png)
 
-## java基本语法
+# java基本语法
 
-### 关键字
+## 关键字
 
 - ![](assets/e653bcbb4fa0b2d187166ef18803356ff4d7f406b66502193df22d3bc1611d6c.png)
 - ![](assets/1463ca4bd0c30ed075a91f03a0a475acbde931310efec75fe2318a716cb41190.png)
 
-### 命名规范
+## 命名规范
 
 - ![](assets/064d858f1c7404cab058b2e6dac6828ce8b4c7ed046553a83339a5218cd2a1a3.png)
 
-### 变量
+## 变量
 
 - 概念
 
@@ -88,11 +86,11 @@
 
 					- String a = “43”; int i = Integer.parseInt(a)
 
-### 全局常量定义
+## 全局常量定义
 
 - private static final double PI = 3.1415926535;
 
-### 进制
+## 进制
 
 - 正数的原码、反码、补码都相同
 负数的补码是其反码+1（补码符号位不变，其他位反转）
@@ -123,7 +121,7 @@
 		- ![](assets/e03cc473e8692f7b0a7f8d3d9e0bd7f5eaad6d6d1fc4286a124532b8ae9b1ff5.png)
 		- ![](assets/06586e94cae53682b40dedc16e83a860423d98efda863cb2ac40b92cd7455d92.png)
 
-### 运算符
+## 运算符
 
 - 算术运算符
 
@@ -158,7 +156,7 @@
 
 	- ![](assets/46fde70c4c1c61556f82798bf190ff69afef93e9c795149daba9e0983c349c92.png)
 
-### 程序流程控制
+## 程序流程控制
 
 - 顺序结构
 
@@ -213,7 +211,7 @@
 
 	-  return结束一整个方法
 
-### 输入输出
+## 输入输出
 
 - 资料链接[](https://blog.csdn.net/ai_yue/article/details/80939529?biz_id=102&utm_term=java%E7%9A%84%E8%BE%93%E5%85%A5%E8%AF%AD%E5%8F%A5&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-80939529&spm=1018.2118.3001.4187)
 
@@ -268,7 +266,7 @@ char c = s.charAt(0); //输入单个字符
 				}
 
 
-### 数组
+## 数组
 
 - 概述
 
@@ -301,7 +299,7 @@ char c = s.charAt(0); //输入单个字符
 
 	- 必须使用Arrays类![](assets/483ebad61a7b65a63767ca65ea049034a7d324e0fbf6402f0431780d8a1fa5fe.png)
 
-### 排序算法学习
+## 排序算法学习
 
 - 插入排序
 
@@ -363,9 +361,9 @@ char c = s.charAt(0); //输入单个字符
     （4)当待排序记录数n较小，记录已接近有序或随机分布时，又要求排序稳定，可采用直接插入排序。
     （5）当待排序记录数n较小，且对稳定性不作要求时，可采用直接选择排序。
 
-## 面向对象
+# 面向对象
 
-### 类的构成
+## 类的构成
 
 - 基本构成
 
@@ -533,7 +531,7 @@ String--->基本数据类型、包装类:调用包装类的parseXxx(String s)
 	- 重载（overload)和重写(overried，有的书也叫做“覆盖”）的区别？
 答：方法的重写Overriding和重载Overloading是Java多态性的不同表现。重写Overriding是父类与子类之间多态性的一种表现，重载Overloading是一个类中多态性的一种表现。如果在子类中定义某方法与其父类有相同的名称和参数，我们说该方法被重写 (Overriding)。子类的对象使用这个方法时，将调用子类中的定义，对它而言，父类中的定义如同被"屏蔽"了。如果在一个类中定义了多个同名的方法，它们或有不同的参数个数或有不同的参数类型，则称为方法的重载(Overloading)。
 
-### 方法学习
+## 方法学习
 
 - 方法重载
 
@@ -569,7 +567,7 @@ String--->基本数据类型、包装类:调用包装类的parseXxx(String s)
 	- 注意：
 子类与父类中同名同参数的方法必须同时声明为非static的(即为重写)，或者同时声明为static的（不是重写）。因为static方法是属于类的，子类无法覆盖父类的方法。
 
-### 对象的内存解析
+## 对象的内存解析
 
 -     ·堆（Heap)，此内存区域的唯一目的就是存放对象实例，几乎所有的对象实例都在这里分配内存，所有的对象实例以及数组都要在堆上分配。
      栈（Stack)，是指虚拟机栈。虚拟机栈用于存储局部变量等。局部变量表存放了编译期可知长度的各种基本数据类型。方法执行完，自动释放。
@@ -582,7 +580,7 @@ String--->基本数据类型、包装类:调用包装类的parseXxx(String s)
 		- 如果对一个对象只需要进行一次方法调用，那么就可以使用匿名对象；如：new Person().shout();
 		- 我们经常将匿名对象作为实参传递给一个方法调用
 
-### 面向对象特征
+## 面向对象特征
 
 - 封装与隐藏
 访问权限修饰符
@@ -636,7 +634,7 @@ String--->基本数据类型、包装类:调用包装类的parseXxx(String s)
 		- 若子类重写了父类方法，就意味着子类里定义的方法彻底覆盖了父类里的同名方法，系统将不可能把父类里的方法转移到子类中。
 对于实例变量则不存在这样的现象，即使子类里定义了与父类完全相同的实例变量，这个实例变量依然不可能覆盖父类中定义的实例变量（注意变量的调用还是类本身的实例变量，不管子类）
 
-### 关键字
+## 关键字
 
 - this  关键字
 
@@ -714,7 +712,7 @@ super可用于在子类构造器中调用父类的构造器
 
 	- ![](assets/9fc052f821f6c306efe73bc93bdbc4bdbdf42971e466c0d223cf9d3a845a3f0f.png)
 
-### 设计模式
+## 设计模式
 
 - 单例设计模式
 
@@ -741,7 +739,7 @@ super可用于在子类构造器中调用父类的构造器
 
 - 工厂模式
 
-### Java的垃圾回收
+## Java的垃圾回收
 
 - 分配：由JVM自动为其分配相应的内存空间
 释放：由JVM提供垃圾回收机制自动的释放内存空间
@@ -754,9 +752,9 @@ super可用于在子类构造器中调用父类的构造器
 再问：调用了System.gc();或Runtime.getRuntime().gc();后是立刻执行垃圾回收吗？
 不是，该调用并不会立刻启动垃圾回收机制开始回收，但会加快垃圾回收机制的运行。
 
-## 异常处理
+# 异常处理
 
-### 简介
+## 简介
 
 - ![](assets/40f660301068fd27e9f89eecfd11aed3cd73bd5c44f228c42a3d23b05dd3abaa.png)
 - Throwable类有两个直接子类：
@@ -767,7 +765,7 @@ super可用于在子类构造器中调用父类的构造器
 （1）Check异常: 派生自Exception的异常类，必须被捕获或再次声明抛出
 （2）Runtime异常：派生自RuntimeException的异常类。使用throw语句可以随时抛出这种异常对象 throw new ArithmeticException(…);
 
-### 异常分类
+## 异常分类
 
 - 发生异常的原因
 1、用户输入了非法数据。
@@ -828,7 +826,7 @@ RandomAccessFile的构造器声明抛出，即使被操作的文件存在，但�
 
 当Java虚拟机或者类装载器试图实例化某个类，而找不到该类的定义时抛出该错误
 
-### 异常处理
+## 异常处理
 
 - try-catch-finally
 
@@ -902,9 +900,9 @@ public class B2 extends A {
 			- ![](assets/8c3e2dd0ec9bf2ea8d36efcad0277e3ea6b0954f8e1d33b4be1bed0b88928db6.png)
 			- ![](assets/4976aafdc34aa3cef44672573fbfbd987186c97101e6cd8fbb31d5adfcfef00f.png)
 
-## 多线程
+# 多线程
 
-### 基本概念
+## 基本概念
 
 - 程序、进程、线程
 
@@ -944,7 +942,7 @@ public class B2 extends A {
  程序需要实现一些需要等待的任务时，如用户输入、文件读写操作、网络操作、搜索等。
  需要一些后台运行的程序时
 
-### 创建与使用
+## 创建与使用
 
 - Java语言的JVM允许程序运行多个线程，它通过java.lang.Thread类来体现。
 Thread类的特性
@@ -1082,7 +1080,7 @@ Runnable被线程执行，又可以作为Future得到Callable的返回值
  Java垃圾回收就是一个典型的守护线程。
  若JVM中都是守护线程，当前JVM将退出
 
-### 线程的生命周期
+## 线程的生命周期
 
 - JDK中用Thread.State类定义了线程的几种状态
 要想实现多线程，必须在主线程中创建新的线程对象。Java语言使用Thread类及其子类的对象来表示线程，在它的一个完整的生命周期中通常要经历如下的五种状态：
@@ -1093,7 +1091,7 @@ Runnable被线程执行，又可以作为Future得到Callable的返回值
 死亡：线程完成了它的全部工作或线程被提前强制性地中止或出现异常导致结束
 - ![](assets/34df59e677b9243c420cb2478053cb413c50d5bc69aec869c02610bc7b0bee80.png)
 
-### 线程同步
+## 线程同步
 
 - 方法概念
 
@@ -1186,16 +1184,16 @@ Lock  同步代码块（已经进入了方法体，分配了相应资源） �
 java.lang.IllegalMonitorStateException异常。
  因为这三个方法必须有锁对象调用，而任意对象都可以作为synchronized的同步锁，因此这三个方法只能在Object类中声明。
 
-### 代码
+## 代码
 
 - ThreadPool.java[](assets/4a05bf7730b4115260c3f79c05e5e3080df966a81004e382129e41a1d05c86f2.java)
 - ThreadNew.java[](assets/9e503c0a14e2db47ac1956db27e97dcca3dcfe95cf38e2d0f343d83642c9197c.java)
 - DeadLock.java[](assets/50b4c638cc358368f29050a36a23737b3f7c27e59f7c54ecddc31eda6d1454a8.java)
 - ThreadLock.java[](assets/242a534b642f147687eeda73da3ae308b0367d60c627e1db0b6d1f4d13646587.java)
 
-## 常用类
+# 常用类
 
-### 字符串类型
+## 字符串类型
 
 - String类：代表字符串，不可变
 
@@ -1311,7 +1309,7 @@ public void setCharAt(int n ,char ch)
 StringBuilder(JDK 5.0)：可变字符序列、效率高、线程不安全
 注意：作为参数传递的话，方法内部String不会改变其值，StringBuffer和StringBuilder会改变其值。
 
-### 日期时间API
+## 日期时间API
 
 - java.lang.System类
 
@@ -1468,7 +1466,7 @@ System.out.println("下一个工作日是：" + localDate);
 
 		- ![](assets/3f29517f5cc9c196d04ef555776a5f52c1ae7cd55268fe992c4f860e373ad755.png)
 
-### java比较器
+## java比较器
 
 -  自然排序：java.lang.Comparable
 
@@ -1496,7 +1494,7 @@ o1小于o2。
  可以将 Comparator 传递给 sort 方法（如 Collections.sort 或 Arrays.sort），从而允许在排序顺序上实现精确控制。
  还可以使用 Comparator 来控制某些数据结构（如有序 set或有序映射）的顺序，或者为那些没有自然顺序的对象 collection 提供排序。
 
-### System类
+## System类
 
 -  System类代表系统，系统级的很多属性和控制方法都放置在该类的内部。该类位于java.lang包。
  由于该类的构造器是private的，所以无法创建该类的对象，也就是无法实例化该类。其内部的成员变量和成员方法都是static的，所以也可以很方便的进行调用。
@@ -1518,7 +1516,7 @@ o1小于o2。
 
 	- ![](assets/2478b2462a0d206f8655e2288ba12afc0614e5a64cf22d8fd2cdc36733af4f38.png)
 
-### Math类
+## Math类
 
 - java.lang.Math提供了一系列静态方法用于科学计算。其方法的参数和返回值类型一般为double型。
 abs 绝对值
@@ -1534,7 +1532,7 @@ long round(double a) double型数据a转换为long型（四舍五入）
 toDegrees(double angrad) 弧度—>角度
 toRadians(double angdeg) 角度—>弧度
 
-### BigInteger与BigDecimal
+## BigInteger与BigDecimal
 
 - BigInteger
 
@@ -1568,9 +1566,9 @@ toRadians(double angdeg) 角度—>弧度
  public BigDecimal multiply(BigDecimal multiplicand)
  public BigDecimal divide(BigDecimal divisor, int scale, int roundingMode)
 
-## 枚举和注解
+# 枚举和注解
 
-### 枚举类
+## 枚举类
 
 - 枚举类对象的属性不应允许被改动, 所以应该使用 private final 修饰
 枚举类的使用 private final 修饰的属性应该在构造器中为其赋值
@@ -1629,7 +1627,7 @@ return seasonDesc;
 IllegalArgumentException。
  toString()：返回当前枚举类对象常量的名称
 
-### 注解
+## 注解
 
 - 从 JDK 5.0 开始, Java 增加了对元数据(MetaData) 的支持, 也就是
 Annotation(注解)
@@ -1757,9 +1755,9 @@ public static void test(@MyAnnotation String arg) throws @MyAnnotation Exception
 @interface MyAnnotation {
 }
 
-## java集合
+# java集合
 
-### Collection接口：单列数据，定义了存取一组对象的方法的集合
+## Collection接口：单列数据，定义了存取一组对象的方法的集合
 List：元素有序、可重复的集合
 Set：元素无序、不可重复的集合
 
@@ -1768,7 +1766,7 @@ public static void test(@MyAnnotation String arg) throws @MyAnnotation Exception
 - ![](assets/7d8f8cfed9f5b83155dd665ac2e62a4b8ebf2f5703efd0bee319b71114b8f39d.png)
 - ![](assets/c6c37745241fa6fbabdebdd843cc0f9dcbeebf7365895b0aec6c3c17b19ccf67.png)
 
-### Collection 接口
+## Collection 接口
 
 - Collection 接口是 List、Set 和 Queue 接口的父接口，该接口里定义的方法既可用于操作 Set 集合，也可用于操作 List 和 Queue 集合。
 JDK不提供此接口的任何直接实现，而是提供更具体的子接口(如：Set和List)实现。
@@ -2006,7 +2004,7 @@ set.add(new Customer("刘德华", 1001));
 此时，仍然只能向TreeSet中添加类型相同的对象。否则发生ClassCastException异常。
 使用定制排序判断两个元素相等的标准是：通过Comparator比较两个元素返回了0。
 
-### Map接口
+## Map接口
 
 -  Map与Collection并列存在。用于保存具有映射关系的数据:key-value
  Map 中的 key 和 value 都可以是任何引用类型的数据
@@ -2180,7 +2178,7 @@ pros.load(new FileInputStream("jdbc.properties"));
 String user = pros.getProperty("user");
 System.out.println(user);
 
-### Collections工具类
+## Collections工具类
 
 - Collections 是一个操作 Set、List 和 Map 等集合的工具类
 Collections 中提供了一系列静态的方法对集合元素进行排序、查询和修改等操作，
@@ -2208,9 +2206,9 @@ Object obj = stringEnum.nextElement();
 System.out.println(obj); 
 }![](assets/fde40e6181822ae18c113a004ea309a09d93c740b6c728dd36b47665b375c857.png)
 
-## 泛型
+# 泛型
 
-### 概念
+## 概念
 
 -  所谓泛型，就是允许在定义类、接口时通过一个标识表示类中某个属性的类型或者是某个方法的返回值及参数类型。这个类型参数将在使用时（例如，继承或实现这个接口，用这个类型声明变量、创建对象时）确定（即传入实际的类型参数，也称为类型实参）。
  从JDK1.5以后，Java引入了“参数化类型（Parameterized type）”的概念，允许我们在创建集合时再指定集合元素的类型，正如：List<String>，这表明该List只能保存字符串类型的对象。
@@ -2252,7 +2250,7 @@ Entry<String,Integer> entry = iterator.next();
 System.out.println(entry.getKey() + "--->" + entry.getValue());
 }
 
-### 自定义泛型结构
+## 自定义泛型结构
 
 - 1.泛型的声明
 interface List<T> 和 class GenTest<K,V> 
@@ -2410,7 +2408,7 @@ test(new Creature());
 }
 }
 
-### 泛型在继承上的体现
+## 泛型在继承上的体现
 
 - 如果B是A的一个子类型（子类或者子接口），而G是具有泛型声明的类或接口，G<B>并不是G<A>的子类型！
 比如：String是Object的子类，但是List<String >并不是List<Object>的子类。![](assets/756592025111c5efbecac48c31f53f1d57ab0a94a8d0acc57c90303e3bc0cd04.png)
@@ -2427,7 +2425,7 @@ List<Man> manList = null;
 // personList = manList;(报错)
 }
 
-### 通配符的使用
+## 通配符的使用
 
 - 1.使用类型通配符：？
 比如：List<?> ，Map<?,?>
@@ -2504,7 +2502,7 @@ System.out.println(iterator.next());
 }
 }
 
-### 应用场景
+## 应用场景
 
 - 泛型嵌套
 
@@ -2527,9 +2525,9 @@ System.out.println("家庭成员：" + value);
 }
 	- 用户在设计类的时候往往会使用类的关联关系，例如，一个人中可以定义一个信息的属性，但是一个人可能有各种各样的信息（如联系方式、基本信息等），所以此信息属性的类型就可以通过泛型进行声明，然后只要设计相应的信息类即可。![](assets/ff367ab42f5368379677ae83539803ec1884dd2934673182a472ba74625fefdf.png)
 
-## IO流
+# IO流
 
-### File类
+## File类
 
 -  java.io.File类：文件和文件目录路径的抽象表示形式，与平台无关
  File 能新建、删除、重命名文件和目录，但 File 不能访问文件内容本身。如果需要访问文件内容本身，则需要使用输入/输出流。
@@ -2608,7 +2606,7 @@ if (!file.exists()) { // 如果还不存在，就创建为文件
 file.createNewFile();
 }
 
-### IO流原理及流的分类
+## IO流原理及流的分类
 
 - IO原理
 
@@ -3233,14 +3231,14 @@ Path path = Paths.get("index.html");
  InputStream newInputStream(Path path, OpenOption…how):获取 InputStream 对象
  OutputStream newOutputStream(Path path, OpenOption…how) : 获取 OutputStream 对象
 
-## 网络编程
+# 网络编程
 
-### 概述
+## 概述
 
 - Java是 Internet 上的语言，它从语言级上提供了对网络应用程序的支持，程序员能够很容易开发常见的网络应用程序。
 Java提供的网络类库，可以实现无痛的网络连接，联网的底层细节被隐藏在 Java 的本机安装系统里，由 JVM 进行控制。并且 Java 实现了一个跨平台的网络库，程序员面对的是一个统一的网络编程环境。
 
-### 网络基础
+## 网络基础
 
 - 计算机网络：
 把分布在不同地理区域的计算机与专门的外部设备用通信线路互连成一个规模大、功能强的网络系统，从而使众多的计算机可以方便地互相传递信息、共享硬件、软件、数据信息等资源。
@@ -3250,7 +3248,7 @@ Path path = Paths.get("index.html");
 如何准确地定位网络上一台或多台主机；定位主机上的特定的应用
 找到主机后如何可靠高效地进行数据传输
 
-### 网络通信要素概述
+## 网络通信要素概述
 
 - 相互通信
 
@@ -3564,9 +3562,9 @@ Interface-的简称，是用户浏览器和服务器端的应用程序进行连�
 类 Socket 和 ServerSocket 实现了基于TCP协议的客户端－服务器程序。Socket是客户端和服务器之间的一个连接，连接创建的细节被隐藏了。这个连接提供了一个安全的数据传输通道，这是因为 TCP 协议可以解决数据在传送过程中的丢失、损坏、重复、乱序以及网络拥挤等问题，它保证数据可靠的传送。
 类 URL 和 URLConnection 提供了最高级网络应用。URL 的网络资源的位置来同一表示Internet 上各种网络资源。通过URL对象可以创建当前应用程序和 URL 表示的网络资源之间的连接，这样当前程序就可以读取网络资源数据，或者把自己的数据传送到网络上去
 
-## Java反射机制
+# Java反射机制
 
-### 概述
+## 概述
 
 - Reflection（反射）是被视为动态语言的关键，反射机制允许程序在执行期借助于Reflection API取得任何类的内部信息，并能直接操作任意对象的内部属性及方法。
 加载完类之后，在堆内存的方法区中就产生了一个Class类型的对象（一个类只有一个Class对象），这个对象就包含了完整的类的结构信息。我们可以通过这个对象看到类的结构。这个对象就像一面镜子，透过这个镜子看到类的结构，所以，我们形象的称之为：反射。![](assets/513c53e71f8e47a5fecb8759c4c012b8e9400225f856d8fa35d0e89502630062.png)
@@ -3594,7 +3592,7 @@ Interface-的简称，是用户浏览器和服务器端的应用程序进行连�
  java.lang.reflect.Field:代表类的成员变量
  java.lang.reflect.Constructor:代表类的构造器
 
-### class类
+## class类
 
 - 概述
 
@@ -3636,7 +3634,7 @@ Class clazz4 = cl.loadClass(“类的全类名”);
 （6）primitive type：基本数据类型
 （7）void
 
-### 类的加载
+## 类的加载
 
 - 概述
 
@@ -3749,7 +3747,7 @@ static final int M = 1;
 • in = this.getClass().getClassLoader().getResourceAsStream("exer2\\test.properties");
 • System.out.println(in);
 
-### 运行时类
+## 运行时类
 
 - 创建
 
@@ -3871,7 +3869,7 @@ System.out.println(p2);
  使得原本无法访问的私有成员也可以访问
  参数值为false则指示反射的对象应该实施Java语言访问检查。
 
-### 动态代理
+## 动态代理
 
 - 代理模式原理
 
@@ -3968,9 +3966,9 @@ AOP代理里的方法可以在执行目标方法之前、之后插入一些通�
 
 		- ![](assets/c009d42cf6781e2e4619132d5d5eb4cfe330924909c4f474354ed1bdb6d01c96.png)
 
-## 新版本Java特性
+# 新版本Java特性
 
-### Java8
+## Java8
 
 - Lambda表达式
 
@@ -4197,12 +4195,12 @@ Optional<Employee> emp = opt.map(e ->
 System.out.println(emp);
 }
 
-### Java9&Java10&
+## Java9&Java10&
 Java11新特性
 
 - 尚硅谷_宋红康_第17章_Java9&Java10&Java11新特性.pdf[](assets/ad46334d10dc54db2624e81ab57284bf2c7d6aabaaca252160a854585ab139aa.pdf)
 
-### 资料
+## 资料
 
 - 尚硅谷_宋红康_Java 5-11各个版本新特性最全总结.pdf[](assets/b5fd931fa4f0acdff978c73b6d44d6d776bd587f790ababba2d99d3c5345d347.pdf)
 
